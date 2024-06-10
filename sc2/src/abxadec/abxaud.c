@@ -595,7 +595,7 @@ abxa_Decode (THIS_PTR, void* buf, sint32 bufsize)
 	do
 	{
 		stuffed = abxa_stuffBuffer (abxa, buf, bufsize);
-		((uint8*)buf) += stuffed;
+		buf += stuffed;
 		bufsize -= stuffed;
 		total += stuffed;
 	
